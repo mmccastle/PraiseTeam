@@ -1,0 +1,61 @@
+*
+  border: none
+  margin: 0
+
+body
+  color: white
+  font-family: cambria
+
+img.bg
+  min-height: 100%
+  min-width: 1024px
+  width: 100%
+  height: auto
+  position: fixed
+  top: 0
+  left: 0
+  z-index: -1
+
+@media screen and (max-width: 1024px)
+
+  img.bg
+    left: 50%
+    margin-left: -512px
+
+hr
+  padding: 0
+  margin-left: 120px
+  border-bottom: double .25em
+
+#tips-main-wrapper
+  padding: 0
+  overflow-x: hidden
+
+@media screen and (min-width: 425px) and (max-width: 768px)
+  #sidebar
+    width: 0
+
+  hr
+    margin: 0
+
+  #container
+    width: 75%
+
+  #audio-image
+    max-height: 305px
+
+  #progressbar
+    width: 80%
+
+  button
+    &#play, &#stop, &#pause, &#prev, &#next, &#forward, &#rewind
+      width: 8vw
+      height: 8vw
+
+@media (max-width: 425px)
+  hr
+    margin: 0
+
+@media (max-width: 328px)
+  .tip-article
+    width: 100%

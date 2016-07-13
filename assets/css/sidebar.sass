@@ -1,0 +1,35 @@
+#sidebar
+  background: orange
+  width: 125px
+  position: fixed
+  height: 100%
+  overflow-y: hidden
+  left: 0
+
+  @media (max-width: 425px)
+    width: 0
+
+nav
+  margin-top: 200px
+  width: 100%
+  line-height: 2.5em
+  font-size: 1.25em
+
+  a
+    width: 100%
+    display: block
+
+    &:link
+      text-decoration: none
+      color: #0096fa
+
+    &:active
+      text-decoration: none
+      background-color: lightgray
+
+    &:visited
+      text-decoration: none
+
+    &:hover
+      text-decoration: none
+      background: #fae100

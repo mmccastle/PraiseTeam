@@ -1,0 +1,173 @@
+doctype html(lang='en')
+head
+    title APOC inspires
+    link(rel='icon', type='image/png', href='assets/img/APOC-logo-outline_sm.png')
+    meta(http-equiv='Cache-control', content='public')
+    meta(name='viewport', content='width=device-width , initial-scale=1')
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/main.min.css')
+  
+  body
+  
+    button.btn-drop
+      span.glyphicon.glyphicon-menu-hamburger
+
+    header#drop-down
+      div#drop-nav
+        ul
+          li
+            a(href='#welcome') Home         
+          li
+            a(href='#songs') Songs         
+          li
+            a(href='#attire-events') Attire & Events         
+          li
+            a(href='#tips-content-wrapper') Useful Literature
+
+    img.bg(src='assets/img/logo-back.png', alt='background')
+    
+    main#wrapper
+      aside#sidebar
+        div
+          img(src='assets/img/apoc.png', alt='logo', style='width: 100px; margin-top: 10px; margin-left: 10px; ')        
+        nav#mainNav.text-center
+          a(href='#welcome') Home         
+          a(href='#songs') Songs         
+          a(href='#attire-events') Attire & aEvents         
+          a(href='#tips-content-wrapper') Useful Literature 
+
+
+      section#tips-main-wrapper.container-fluid
+        //- Tips header
+        section#welcome.row
+          .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.text-center
+            h4(style='font-family: papyrus') Psalm 104:33 ESV I will sing to the Lord as long as I live; I will sing praise to my God while I have being.           
+            h2
+              em
+                span.h1
+                  strong Welcome to the Official Home for all things APOC Praise Team related!
+              p The goal and aim of this portal is to better serve you by providing all the tools you need to make your experience with the team, the best ever! So, come on in, kick your shoes off, and check us out! We update this space regularly so, check in and check often!
+        
+       
+        hr
+        //- Songs
+        section#songs(style='margin-top: 200px; margin-bottom: 200px;')
+          h3.text-center SONGS
+          
+          #container
+            //- Cover Art & Track Information
+            #audio-image
+              img.cover(alt='cover')
+           
+            #audio-player
+              #audio-info
+                span.artist
+                  - 
+                span.title
+              //- Volume controls
+              input#volume(type='range', min='0', max='10', value='5')
+             
+              br
+             
+              #buttons.text-center
+                span
+                  button#prev(type='button')
+                  button#rewind(type='button')
+                  button#play(type='button')
+                  button#pause(type='button')
+                  button#stop(type='button')
+                  button#forward(type='button')
+                  button#next(type='button')
+              .clearfix
+              //- progress bar & duration
+              #tracker.text-center
+                #progressbar
+                  span#progress
+               
+                span#duration
+              //- Playlist
+              .clearfix
+             
+              ul#playlist
+                li(song='http://goo.gl/OrGxMw?gdriveurl', artist='Johnathan Nelson', cover='nelson.jpg') Great & Mighty are you Lord               
+                li(song='http://goo.gl/g5K91D?gdriveurl', artist='Todd Dulaney', cover='heart.jpg') Free Worshipher               
+                li(song='http://goo.gl/wLIMwt?gdriveurl', artist='Vashawn Mitchell', cover='vashawn.jpg') Turning Around for Me               
+                li(song='http://goo.gl/ulXsAi?gdriveurl', artist='Bryon Cage') The Air I Breathe               
+                li(song='http://goo.gl/fKWB3M?gdriveurl', artist='Joe Pace') Oh Clap Your Hands!              
+                li(song='http://k003.kiwi6.com/hotlink/ma1bef0eks/Mali_Music-_Yahweh.mp3', artist='Mali Music', cover='mali.jpg') Yaweh                
+                li(song='http://goo.gl/AMLwZB?gdriveurl', artist='Ricky Dillard & New G', cover='amazing.jpg') Amazing                                            
+                li(song='http://goo.gl/HB0ucf?gdriveurl', artist='Bryon Cage', cover='great&mighty.jpg') Great & Mighty
+                li(song='http://goo.gl/qQNIgI?gdriveurl', artist='Smokie Norful', cover='smokie.jpg') No One Else                                            
+                li(song='http://k003.kiwi6.com/hotlink/dw4tfrsi4d/William_McDowell_-_I_Belong_To_You.mp3', artist='William McDowell', cover='arise.jpg') I Belong to To You                                           
+                li(song='http://goo.gl/43RKx5?gdriveurl', artist='Todd Dulaney', cover='through.jpg') Pulling Me Through                                           
+                li(song='http://goo.gl/OjnpG0?gdriveurl', artist='Jason Nelson', cover='iam.jpg') I Am                                            
+                li(song='http://goo.gl/onBRN9?gdriveurl', artist='William Murphy', cover='chaser.jpg') You Reign                                            
+                li(song='http://goo.gl/cTvpD4?gdriveurl', artist='William Murphy', cover='chaser.jpg') Empty Me                                      
+                li(song='http://goo.gl/gMsC4u?gdriveurl', artist='Anthony Brown & Group TherAPy', cover='worth.jpg') Worth                     
+                li(song='http://goo.gl/kh9cCH?gdriveurl', artist='Charles Jenkins', cover='awesome.jpg') Awesome                                    
+                li(song='http://goo.gl/xDNKkd?gdriveurl', artist='Isreal & New Breed') Alpha & Omega                                      
+                li(song='http://goo.gl/k6IJ6N?gdriveurl', artist='Donnie McClurkin') Great is Your Mercy                       
+                li(song='http://goo.gl/CNz8Pi?gdriveurl', artist='William Murphy', cover='chaser.jpg') It's Working                                        
+                li(song='http://goo.gl/sSww7e?gdriveurl', artist='William Murphy', cover='chaser.jpg') Let it Rise                                       
+                li(song='http://goo.gl/alrLgy?gdriveurl', artist='William McDowell', cover='worship') Here I am To Worship                                       
+                li(song='http://goo.gl/BT05hy?gdriveurl', artist='William McDowell', cover='arise.jpg') Withholding Nothing                                        
+                li(song='http://goo.gl/z20ZCd?gdriveurl', artist='William McDowell', cover='arise.jpg') I Give Myself Away                       
+                li(song='http://goo.gl/uydWD2?gdriveurl', artist='Vashawn Mitchell', cover='') God My God                                       
+                li(song='http://goo.gl/LwO93X?gdriveurl', artist='Youthful Praise', cover='') Incredible God
+            //- end playlist
+
+        hr
+        //- Attire & Events
+        section#attire-events.row(style='margin-top: 200px; margin-bottom: 200px;')
+          .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+            h3.text-center ATTIRE &amp; EVENTS
+           
+            iframe#calendar(src='https://calendar.google.com/calendar/embed?showTabs=0&showCalendars=0&mode=AGENDA&wkst=1&bgcolor=%23FFFFFF&src=dj07lk1pifataspckpdi2hirt8%40group.calendar.google.com&color=%23865A5A&ctz=America%2FNew_York', style='border-width:0', frameborder='0', scrolling='no', height='350px')
+
+        hr
+        //- Tips Content
+        section#tips-content-wrapper.row(style='margin-top: 200px; margin-bottom: 200px;')
+          //- Tips Video
+          .row
+            #tips-video-wrapper.col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+              header#video-header.text-center
+                h3 VIDEOS
+             
+              #slideShow.carousel.slide(data-ride='carousel', data-interval='false')
+                .carousel-inner(role='listbox')
+                  .item.active.embed-responsive.col-xs-12.tip-video
+                    iframe.embed-responsive-item(src='https://www.youtube.com/embed/temMd2x6ErE?rel=0&controls=0&showinfo=0', frameborder='0', allowfullscreen='')
+                                      
+                  .item.embed-responsive.col-xs-12.tip-video
+                    iframe.embed-responsive-item(src='https://www.youtube.com/embed/ZMnwh-mlj60?rel=0&controls=0&showinfo=0', frameborder='0', allowfullscreen='')
+                                      
+                  .item.embed-responsive.col-xs-12.tip-video
+                    iframe.embed-responsive-item(src='https://www.youtube.com/embed/xlRdWsmfCyg', frameborder='0', allowfullscreen='')
+
+                //- Controls
+                button.left.carousel-control(href='#slideShow', role='button', data-slide='prev')
+                  span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                    
+                  span.sr-only Previous
+                                
+                button.right.carousel-control(href='#slideShow', role='button', data-slide='next')
+                  span.glyphicon.glyphicon-chevron-right(aria-hidden='true')                                    
+                  span.sr-only Next
+          
+          //- Tips Article
+          .row
+            header#article-header.text-center
+              h3 ARTICLES
+           
+            #tips-article-wrapper.col-xs-12.col-sm-4.col-sm-offset-4
+              a.tip-article(href='assets/articles/Pitch Correction & Ear Strengthening Ideas.pdf', target='_blank', style='background: #ff7766')
+                p Pitch correction &amp; Ear strengthing
+             
+              a.tip-article(href='assets/articles/Six steps to better team singing!!!!!.pdf', target='_blank', style='background: #ff9988')
+                p 6 Steps to better team singing
+    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', defer='')    
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js', defer='')    
+    script(src='https://code.jquery.com/jquery-2.2.4.js', defer='')    
+    script(src='assets/js/main.min.js', defer='')

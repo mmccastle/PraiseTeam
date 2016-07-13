@@ -1,0 +1,224 @@
+.clearfix
+  clear: both
+
+#container
+  width: 500px
+  height: 750px
+  background: #333
+  overflow: hidden
+  margin: 60px auto
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  border-radius: 10px
+  border: #666 solid 2px
+  box-shadow: 5px 5px 20px black
+  padding: 0
+
+
+#audio-image
+  position: relative
+  overflow: hidden
+  height: 280px
+  margin-bottom: 15px
+
+#audio-info
+  text-align: center
+  padding-bottom: 10px
+
+  .artist
+    font-weight: bold
+
+.cover
+  width: 100%
+  z-index: 1
+
+input#volume
+  width: 95%
+  margin-left: 2%
+  -webkit-appearance: none !important
+  background: #ccc
+  height: 1px
+  margin-bottom: 20px
+
+  &::-webkit-slider-thumb
+    -webkit-appearance: none !important
+    background: url(../img/knob.png) no-repeat
+    height: 12px
+    width: 12px
+
+#buttons
+  width: 90%
+  display: block
+  margin: auto
+  overflow: auto
+
+button
+  &#play
+    width: 71px
+    height: 71px
+    background: url(../img/play.png) no-repeat
+    background-size: cover
+    -webkit-background-size: contain
+    -moz-background-size: contain
+    -o-background-size: contain
+    padding: 0
+
+  &#pause
+    width: 71px
+    height: 71px
+    background: url(../img/pause.png) no-repeat
+    background-size: cover
+    -webkit-background-size: contain
+    -moz-background-size: contain
+    -o-background-size: contain
+    padding: 0
+
+  &#stop
+    width: 71px
+    height: 71px
+    background: url(../img/stop.png) no-repeat
+    background-size: cover
+    -webkit-background-size: contain
+    -moz-background-size: contain
+    -o-background-size: contain
+    padding: 0
+
+  &#prev
+    width: 71px
+    height: 71px
+    background: url(../img/prev.png) no-repeat center
+    background-size: contain
+    -webkit-background-size: contain
+    background-size: contain
+    margin-top: 15px
+    padding: 0
+
+  &#next
+    width: 71px
+    height: 71px
+    background: url(../img/next.png) no-repeat center
+    background-size: contain
+    -webkit-background-size: contain
+    -moz-background-size: contain
+    -o-background-size: contain
+    padding: 0
+    margin-top: 15px
+
+  &#forward
+    width: 71px
+    height: 71px
+    background: url(../img/foward.png) no-repeat center
+    background-size: contain
+    -webkit-background-size: contain
+    -moz-background-size: contain
+    -o-background-size: contain
+    padding: 0
+    margin-top: 15px
+
+  &#rewind
+    width: 71px
+    height: 71px
+    background: url(../img/rewind.png) no-repeat center
+    background-size: contain
+    -webkit-background-size: contain
+    -moz-background-size: contain
+    -o-background-size: contain
+    padding: 0
+    margin-top: 15px
+
+#playlist
+  list-style-type: none
+  padding: 10px
+  height: 240px
+  overflow-y: scroll
+  overflow-x: hidden
+  -ms-overflow-style: none
+
+  &::-webkit-scrollbar
+    width: 0
+    background-color: #F5F5F5
+
+  li
+    cursor: pointer
+    margin: 5px
+
+#tracker
+  position: relative
+  width: 100%
+
+#playlist li.active
+  font-weight: bold
+  padding: 3px
+  background: #666
+
+#progressbar
+  width: 400px
+  margin-left: 2%
+  margin-bottom: 20px
+  margin-top: 9px
+  height: 10px
+  background: url(../img/progress_bg.png) no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  float: left
+
+#progress
+  background: url(../img/progress.png) no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  height: 10px
+  display: inline-block
+  position: absolute
+  top: 9px
+  left: 8px
+
+#duration
+  position: absolute
+  top: 0
+  right: 10px
+  padding: 4px 8px
+  background: #000
+  border-radius: 5px
+
+@media screen and (min-width: 425px) and (max-width: 768px)
+  #sidebar
+    width: 0
+
+  hr
+    margin: 0
+
+  #container
+    width: 75%
+
+  #audio-image
+    max-height: 305px
+
+  #progressbar
+    width: 80%
+
+  button
+    &#play, &#stop, &#pause, &#prev, &#next, &#forward, &#rewind
+      width: 10vw
+      height: 10vw
+
+@media (max-width: 425px)
+  #container
+    width: 100%
+    height: 685px
+    margin: 0
+
+  #audio-image
+    max-height: 305px
+
+  #progressbar
+    width: 80%
+
+  button
+    &#play, &#stop, &#pause, &#prev, &#next, &#forward, &#rewind
+      width: 14vw
+      height: 14vw
+
+  #calendar
+    width: 100%
+    padding-right: 15.5px
+    border-radius: 0px
